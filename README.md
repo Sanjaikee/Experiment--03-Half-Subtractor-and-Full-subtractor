@@ -35,20 +35,51 @@ Write the detailed procedure here
 ## Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:Prabha.C 
+RegisterNumber:212222110032
+
+Half subtractor:
+module halfsubtractor(A,B,Difference,Borrow);
+input A,B;
+output Difference,Borrow;
+assign Difference = (A^B);
+assign Borrow = (~A&B);
+endmodule
+
+Full subtractor:
+module fullsub(A,B,C,Difference,Borrow);
+input A,B,C;
+output Difference,Borrow;
+assign Difference = (A^B^C);
+assign Borrow = (~A&(B^C)|(B&C));
+endmodule 
 */
 
 ## Output:
+## Logic gates:
+# FULL SUBTRACTOR:
+![full subtractor](https://user-images.githubusercontent.com/120194155/235298698-ef98cf58-88f9-4fbf-ae4a-da76f96f17d9.png)
+# HALF SUBTRACTOR:
+![half subtractor](https://user-images.githubusercontent.com/120194155/235298711-fdab7374-c9da-45ba-bb81-2c1efdd67354.png)
 
 ## Truthtable
-
-
+# FULL SUBTRACTOR:
+![full sub truthtable](https://user-images.githubusercontent.com/120194155/235299003-f556801e-9005-4b08-b877-404c85a46bba.png)
+# HALF SUBTRACTOR:
+![half sub truth table](https://user-images.githubusercontent.com/120194155/235298749-f728792e-18a4-4a35-86fd-42cae187453f.png)
 
 ##  RTL realization
-
+# FULL SUBTRACTOR:
+![full sub RTL](https://user-images.githubusercontent.com/120194155/235298821-0041eeb0-ca0f-49dd-aae5-e8f9f2836c91.png)
+# HALF SUBTRACTOR:
+![half sub RTL](https://user-images.githubusercontent.com/120194155/235298831-36c6246e-3d77-4d57-a490-0ef321f7a7a1.png)
 
 ## Timing diagram 
+# FULL SUBTRACTOR:
+![full sub dia](https://user-images.githubusercontent.com/120194155/235298943-82da7ae4-f2ab-4fe2-bc9f-c0603a60ff5e.png)
+# HALF SUBTRACTOR:
+![half sub dia](https://user-images.githubusercontent.com/120194155/235298858-a423d026-a863-4262-89a5-f645a58fe3e5.png)
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
