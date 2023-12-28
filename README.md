@@ -1,6 +1,6 @@
 # Experiment 04 Half Subtractor and Full subtractor
-#### Name: Mohamed Anas O.I
-#### Register number: 23008005
+#### Name: Sanjai S
+#### Register number: 23003393
 ## Implementation-of-Half-subtractor-and-Full-subtractor-circuit
 ## AIM:
 To design a half subtractor and full subtractor circuit and verify its truth table in Quartus using Verilog programming.
